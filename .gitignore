@@ -211,4 +211,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+*/*.css
+
 # End of https://www.toptal.com/developers/gitignore/api/node,sass,osx,windows,linux,vim
