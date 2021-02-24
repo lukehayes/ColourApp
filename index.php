@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Colours</title>
 </head>
-<body>
+<body id="app">
     
 
 <script charset="utf-8" src="js/main.js"></script>
