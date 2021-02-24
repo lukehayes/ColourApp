@@ -1,0 +1,11 @@
+/*
+ * Layout styles, flexbox etc.
+ */
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    align-items: center;
+}

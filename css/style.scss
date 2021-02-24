@@ -1,0 +1,31 @@
+@use "type";
+@use "layout";
+
+$maxWidth: 800px;
+
+body,
+html {
+    font-family: "CircularStd-Medium";
+
+    *::selection,
+    *::-moz-selection
+    {
+        background-color: #f3a15D;
+    }
+}
+
+
+@mixin center()
+{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 300px;
+    max-width: $maxWidth;
+}
+
+.text-large
+{
+    font-size: 80px;
+    margin: 40px;
+    @include center;
+}

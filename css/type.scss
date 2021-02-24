@@ -1,0 +1,12 @@
+$font-path: "../fonts";
+
+@font-face {
+    src: url("#{$font-path}/CircularStd-Medium.otf") format("opentype");
+    font-family: "CircularStd-Medium";
+    font-weight: Normal;
+}
+
+.text-large
+{
+    font-size: 70px;
+}
