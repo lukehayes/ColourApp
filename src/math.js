@@ -1,4 +1,8 @@
 /**
+ * Math helper functions are defined inside this library.
+ */
+
+/**
  * Return a range from 0 to N
  *
  * @param {number} n    The maximum number to reach. Defaults to 10.
