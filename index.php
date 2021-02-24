@@ -7,7 +7,7 @@
 <body id="app">
     
 
-<script charset="utf-8" src="js/main.js"></script>
+<script charset="utf-8" type="module" src="src/main.js"></script>
 </body>
 </html>
 
