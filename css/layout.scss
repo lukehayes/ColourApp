@@ -2,10 +2,32 @@
  * Layout styles, flexbox etc.
  */
 
+@mixin radius($size: 2)
+{
+    border-radius: $size + px;
+}
+
 .container
 {
     display: flex;
     justify-content: center;
-    height: 30vh;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    bottom: 40px;
+    position: absolute;
+    @include radius;
+
+    .color-box {
+        width: 40px;
+        height: 40px;
+        background-color: #c3c3c3;
+        @include radius(0);
+    }
 }
