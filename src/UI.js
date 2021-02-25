@@ -32,10 +32,8 @@ function createDiv(options)
 {
     let element = document.createElement("DIV");
     element.innerText = options.value;
-
     options.class.forEach((classname) => element.classList.add(classname));
     options.parent.appendChild(element);
-
     return element;
 }
 
