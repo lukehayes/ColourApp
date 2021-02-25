@@ -14,7 +14,6 @@ function upto(n)
     return [...Array(n).keys()];
 }
 
-
 /**
  * Return a random integer between min and max - excluding max.
  *
@@ -25,13 +24,28 @@ function upto(n)
 function randomBetween(min, max)
 {
     let result = Math.floor(Math.random() * (max - min)) + min;
-
     return result;
 }
 
+/**
+ * Convert an hexadecimal value into a decimal value.
+ *
+ * @param {number} hexValue    The hex value to be converted. (Starts with Ox...).
+ * @return {number}            Converted decimal value.
+ */
+function hexToDec(hexValue)
+{
+    if(typeof hexValue !== 'number')
+    {
+        throw 'The value passed to hexToDec() must be a number.';
+    }
+
+    return parseInt(hexValue, 10);
+}
 
 export {
     upto,
-    randomBetween
+    randomBetween,
+    hexToDec
 };
 
