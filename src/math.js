@@ -40,6 +40,17 @@ function hexToDec(hexValue)
 }
 
 /**
+ * Convert an hexadecimal value into a decimal value.
+ *
+ * @param {number} hexValue    The hex value to be converted. (Starts with Ox...).
+ * @return {number}            Converted decimal value.
+ */
+function decToHex(decValue)
+{
+    return decValue.toString(16).toUpperCase();
+}
+
+/**
  * Check if a value is of type 'number'.
  *
  * @param {number} value           Value to be type checked.
@@ -59,6 +70,7 @@ function isNum(value, errorMessage)
 export {
     upto,
     randomBetween,
-    hexToDec
+    hexToDec,
+    decToHex
 };
 
