@@ -35,12 +35,25 @@ function randomBetween(min, max)
  */
 function hexToDec(hexValue)
 {
-    if(typeof hexValue !== 'number')
-    {
-        throw 'The value passed to hexToDec() must be a number.';
-    }
-
+    isNum(hexValue);
     return parseInt(hexValue, 10);
+}
+
+/**
+ * Check if a value is of type 'number'.
+ *
+ * @param {number} value           Value to be type checked.
+ * @param {string} errorMessage    Value to be type checked.
+ *
+ * @throws {TypeError}             If value is not a number.
+ */
+function isNum(value, errorMessage)
+{
+    if(typeof value !== 'number')
+    {
+        let message = errorMessage || 'The value must be a number.';
+        throw TypeError(message);
+    }
 }
 
 export {
