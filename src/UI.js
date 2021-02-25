@@ -34,8 +34,9 @@ function createDiv(options)
     element.innerText = options.value;
 
     options.class.forEach((classname) => element.classList.add(classname));
-
     options.parent.appendChild(element);
+
+    return element;
 }
 
 
