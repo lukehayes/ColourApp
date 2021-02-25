@@ -1,18 +1,14 @@
-import {upto,randomBetween} from "./math.js"
-import { createTag, createDiv} from "./UI.js"
+import { createDiv } from "./UI.js"
+import { color } from "./color.js"
 
 let root = document.getElementById("app");
-
-let colors = ["#f4f5f7", "#f2d1d4", "#e3e5e6"];
-let colorPick = colors[randomBetween(0,3)];
-
-root.style.backgroundColor = colors[randomBetween(0,3)];
+let colorPick = color();
+root.style.backgroundColor = colorPick;
 
 createDiv({
     value: colorPick,
     parent: root,
     class: ['container', 'text-large']
 });
-
 
 
